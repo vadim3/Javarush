@@ -20,11 +20,13 @@ public class Solution
 
     public static long  getTimeMsOfInsert(List list)
     {
+        Date currentTime = new Date();
         //напишите тут ваш код
 
         insert10000(list);
 
-        //напишите тут ваш код
+        Date newTime = new Date();
+        return newTime.getTime() - currentTime.getTime();//напишите тут ваш код
 
     }
 
